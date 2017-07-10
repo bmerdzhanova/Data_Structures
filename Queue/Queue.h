@@ -1,4 +1,6 @@
-#pragma once
+#ifndef QUEUE_HEADER_INCLUDED
+#define QUEUE_HEADER_INCLUDED
+
 #include <iostream>
 
 template <class T>
@@ -191,3 +193,4 @@ size_t Queue<T>::getSize() const
 {
 	return curSize;
 }
+#endif //QUEUE_HEADER_INCLUDED
