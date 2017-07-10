@@ -11,7 +11,8 @@
 * @compiler VC
 *
 */
-#pragma once
+#ifndef ITERATOR_HEADER_INCLUDED
+#define ITERATOR_HEADER_INCLUDED
 
 template <class T>
 class Iterator
@@ -94,3 +95,5 @@ bool Iterator<T>::operator>(const Iterator<T>& other) const
 {
 	return pNode->data > other.pNode->data;
 }
+
+#endif //ITERATOR_HEADER_INCLUDED
