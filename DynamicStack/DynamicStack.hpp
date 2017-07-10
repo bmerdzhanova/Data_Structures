@@ -1,4 +1,5 @@
-#pragma once
+#ifndef DYNAMIC_STACK_INCLUDED
+#define DYNAMIC_STACK_INCLUDED
 
 template <class T>
 class DynamicStack
@@ -99,3 +100,5 @@ bool DynamicStack<T>::isEmpty()
 	else return false;
 	return false;
 }
+
+#endif //DYNAMIC_STACK_INCLUDED
