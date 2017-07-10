@@ -1,4 +1,5 @@
-#pragma once
+#ifndef STATIC_STACK_HEADER_INCLUDED
+#define STATIC_STACK_HEADER_INCLUDED
 
 template <typename TYPE, int MAX_SIZE>
 class StaticStack {
@@ -76,3 +77,5 @@ bool StaticStack<TYPE, MAX_SIZE>::IsEmpty() const
 {
 	return Size == 0;
 }
+
+#endif //STATIC_STACK_HEADER_INCLUDED
