@@ -11,7 +11,9 @@
 * @compiler VC
 *
 */
-#pragma once
+#ifndef DYNAMIC_ARRAY_HEADER_INCLUDED
+#define DYNAMIC_ARRAY_HEADER_INCLUDED
+
 #include <iostream>
 
 template <class T>
@@ -186,3 +188,4 @@ void DynamicArray<T>::sorted()
 {
 	isSorted = true;
 }
+#endif //DYNAMIC_ARRAY_HEADER_INCLUDED
