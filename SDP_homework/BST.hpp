@@ -11,7 +11,9 @@
 * @compiler VC
 *
 */
-#pragma once
+#ifndef BST_HEADER_INCLUDED
+#define BST_HEADER_INCLUDED
+
 #include <iostream>
 #include "LinkedList.hpp"
 
@@ -255,3 +257,4 @@ void BST<T>::remove(treeNode*& root, int&key, T data)
 	else
 		std::cout << "false" << std::endl;
 }
+#endif //BST_HEADER_INCLUDED
