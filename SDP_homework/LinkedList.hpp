@@ -11,7 +11,9 @@
 * @compiler VC
 *
 */
-#pragma once
+#ifndef LINKED_LIST_HEADER_INCLUDED
+#define LINKED_LIST_HEADER_INCLUDED
+
 #include "Iterator.hpp"
 
 template <class T>
@@ -254,3 +256,5 @@ void LinkedList<T>::pop(const T& elem)
 	//reallocate it's nodes "next" pointer to the element that is after the one that we want to delete
 	//then we shrink it's size
 }
+
+#endif //LINKED_LIST_HEADER_INCLUDED
