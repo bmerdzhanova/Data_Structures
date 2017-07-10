@@ -1,3 +1,6 @@
+#ifndef DYNAMIC_ARRAY_HEADER_INCLUDED
+#define DYNAMIC_ARRAY_HEADER_INCLUDED
+
 #include<iostream>
 
 template<class T>
@@ -262,3 +265,4 @@ inline int DynamicArray<T>::Linear(const T & d)
 	}
 	return -1;
 }
+#endif //DYNAMIC_ARRAY_HEADER_INCLUDED
